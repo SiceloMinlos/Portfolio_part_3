@@ -2,7 +2,7 @@ import React from 'react'
 
 const Connect = () => {
   return (
-    <div className="h-screen snap-center text-white" >Connect</div>
+    <div className="h-screen snap-center text-black" >Connect</div>
   )
 }
 
