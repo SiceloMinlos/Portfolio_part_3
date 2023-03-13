@@ -7,15 +7,14 @@ Source: https://sketchfab.com/3d-models/octopus-873f8e6aa40d4b1ea878d4d5630c2851
 Title: octopus
 */
 
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-
   const { nodes, materials } = useGLTF('/octopus-transformed.glb')
-  
   return (
     <group {...props} dispose={null}>
-      <group scale={0.01}>
+      <group scale={0.011}>
         <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
           <group position={[0, -0.8, -0.5]} rotation={[0.17, 0, 0]} scale={[0.49, 1, 0.38]}>
             <mesh geometry={nodes.Sphere001_Material003_0.geometry} material={materials['Material.003']} />

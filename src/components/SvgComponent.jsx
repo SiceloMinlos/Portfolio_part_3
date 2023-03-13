@@ -4,7 +4,7 @@ import style from "/src/index.css?inline"
 function SvgComponent() {
   return (
     <svg
-      width="130"
+      width="60"
       height="130"
       viewBox="0 0 190 376"
       fill="none"
